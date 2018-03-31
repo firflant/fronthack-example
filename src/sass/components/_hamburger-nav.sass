@@ -1,0 +1,57 @@
+// Hamburger nav
+//
+// Hamburger navigation switched by .is-visible class.
+
+
+// Block
+// --------------------------------------------------
+// .hamburger-nav
+
+// Elements
+// --------------------------------------------------
+.hamburger-nav__icon
+  font-size: 30px
+  cursor: pointer
+  color: black
+
+.hamburger-nav__overlay
+  display: none
+
+.hamburger-nav__wrapper
+  display: none
+  position: fixed
+  background-color: $gray-dark
+  top: 0
+  right: 20vw
+  bottom: 0
+  left: 0
+  z-index: 101
+  box-shadow: 0 0 30px black
+  +breakpoint(tablet)
+    right: 60vw
+
+.hamburger-nav__menu
+  padding-top: 10px
+  +breakpoint(tablet)
+    padding-top: 40px
+
+.hamburger-nav__link
+  display: block
+  padding: 10px $container-paddings
+  color: white
+  &:hover,
+  &:focus
+    background-color: $gray-light
+    color: white
+  .fa
+    float: right
+    margin-left: 10px
+
+// Modifiers
+// --------------------------------------------------
+.hamburger-nav.is-visible
+  .hamburger-nav__overlay
+    display: block
+    +overlay()
+  .hamburger-nav__wrapper
+    display: block

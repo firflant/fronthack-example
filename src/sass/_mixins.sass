@@ -89,7 +89,7 @@
 =column($amount, $gap)
   float: left
   width: calc(#{100%/$amount} - #{$gap * ($amount - 1) / $amount})
-  &:not(:nth-child(#{$amount}))
+  &:not(:nth-child(#{$amount}n))
     margin-right: $gap
 
 // Reset columns before redefining them again for next breakpoint

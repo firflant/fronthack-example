@@ -2,11 +2,24 @@
   <div class="sticky-navbar__fixed">
     <div class="sticky-navbar__container">
       <a href="/" class="logo" title="Home"></a>
-      <nav class="nav-horizontal">
+      <nav class="nav-horizontal hidden-xs">
         <a class="nav-horizontal__link" href="#">Homepage</a>
         <a class="nav-horizontal__link" href="#">About</a>
         <a class="nav-horizontal__link" href="#">Contact</a>
       </nav>
+      <div class="hamburger-nav visible-xs">
+        <div class="hamburger-nav__icon" id="hamburger-show">
+          <i class="icon icon--menu"></i>
+        </div>
+        <div class="hamburger-nav__overlay" id="hamburger-hide"></div>
+        <div class="hamburger-nav__wrapper">
+          <nav class="hamburger-nav__menu">
+            <a class="hamburger-nav__link" href="#">Homepage</a>
+            <a class="hamburger-nav__link" href="#">About</a>
+            <a class="hamburger-nav__link" href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
     </div>
   </div>
 </div>

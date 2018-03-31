@@ -2,13 +2,16 @@
 //
 // Navigation bar sticked to top.
 
+$sticky-navbar-height-mobile: 60px
 $sticky-navbar-height: 90px
 
 // Block
 // --------------------------------------------------
 .sticky-navbar
   // Set space
-  height: $sticky-navbar-height
+  height: $sticky-navbar-height-mobile
+  +breakpoint(tablet)
+    height: $sticky-navbar-height
 
 // Elements
 // --------------------------------------------------
@@ -16,10 +19,13 @@ $sticky-navbar-height: 90px
   position: fixed
   top: 0
   width: 100%
-  height: $sticky-navbar-height
+  height: $sticky-navbar-height-mobile
   z-index: 10
   background-color: white
   color: white
+  box-shadow: 0 -4px 10px black
+  +breakpoint(tablet)
+    height: $sticky-navbar-height
 
 .sticky-navbar__container
   display: flex

@@ -6,11 +6,16 @@
 // Block
 // --------------------------------------------------
 .gallery-item
-  +column(4, 27px)
   margin-bottom: 25px
+  text-align: center
+  +breakpoint(tablet)
+    +column(2, 27px)
+  +breakpoint(desktop)
+    +column-reset
+    +column(4, 27px)
 
 
 // Elements
 // --------------------------------------------------
-.gallery-item__image
-  width: 100%
+  +breakpoint(tablet)
+    width: 100%
