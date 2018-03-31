@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>HTML prototype</title>
+    <meta name="description" content="Fronthack page's HTML prototype" />
+
+    <link rel="stylesheet" href="css/style.bundle.css" />
+  </head>
+
+  <body>
+<div class="sticky-navbar">
+  <div class="sticky-navbar__fixed">
+    <div class="sticky-navbar__container">
+      <a href="/" class="logo" title="Home"></a>
+      <nav class="nav-horizontal hidden-xs">
+        <a class="nav-horizontal__link" href="#">Homepage</a>
+        <a class="nav-horizontal__link" href="#">About</a>
+        <a class="nav-horizontal__link" href="#">Contact</a>
+      </nav>
+      <div class="hamburger-nav visible-xs">
+        <div class="hamburger-nav__icon" id="hamburger-show">
+          <i class="icon icon--menu"></i>
+        </div>
+        <div class="hamburger-nav__overlay" id="hamburger-hide"></div>
+        <div class="hamburger-nav__wrapper">
+          <nav class="hamburger-nav__menu">
+            <a class="hamburger-nav__link" href="#">Homepage</a>
+            <a class="hamburger-nav__link" href="#">About</a>
+            <a class="hamburger-nav__link" href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="layout-landing">
+  <div class="container">
+    <div class="welcome-text">
+      <h1 class="welcome-text__title">
+        Fronthack
+        <span class="welcome-text__title-white">Workshops</span>
+      </h1>
+      <div class="welcome-text__addon">Build your first page</div>
+    </div>
+  </div>
+</div>
+
+<div class="layout-dark">
+  <div class="narrow-container">
+    <section class="block">
+      <h2 class="block__title">Scalable and modular</h2>
+      <div class="block__content">
+        <div class="text-with-image">
+          <img src="images/laptops.png" srcset="images/laptops@2x.jpg 2x" alt="" class="text-with-image__img" />
+          <div class="text-with-image__text">
+            <p>Fronthack has been created for frontend developers. It combines a set of tools and best practices together, answering for question “How to deliver high quality code?“.</p>
+            <p>It is a bolierplate for your projects. Starting frontend from Fronthack will help you implement pixel-perfect designs and will make you sure that your stylesheets will remain modular and scallable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="layout-white">
+  <div class="container">
+    <section class="block">
+        <h2 class="block__title">Everything what you need</h2>
+        <div class="block__content">
+          <div class="clearfix">
+            <div class="gallery-item">
+              <img src="images/gallery/photo-01.jpg" srcset="images/gallery/photo-01@2x.jpg 2x" alt="" class="gallery-item__img" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery/photo-02.jpg" srcset="images/gallery/photo-02@2x.jpg 2x" alt="" class="gallery-item__img" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery/photo-03.jpg" srcset="images/gallery/photo-03@2x.jpg 2x" alt="" class="gallery-item__img" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery/photo-04.jpg" srcset="images/gallery/photo-04@2x.jpg 2x" alt="" class="gallery-item__img" />
+            </div>
+          </div>
+          <div class="more">
+            <a href="#" class="btn">More</a>
+          </div>
+        </div>
+      </section>
+  </div>
+</div>
+
+<footer class="layout-footer">
+  <div class="container text-center">
+    Copyright © Fronthack 2018
+  </div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      // Toggle hamburger
+      $( document ).ready(function() {
+        $('#hamburger-show').on('click', function(e) {
+          $(this).parent('.hamburger-nav').addClass('is-visible')
+        });
+        $('#hamburger-hide').on('click', function(e) {
+          $(this).parent('.hamburger-nav').removeClass('is-visible')
+        });
+      });
+    </script>
+  </body>
+</html>
