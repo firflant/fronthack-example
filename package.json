@@ -1,96 +1,39 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "fronthack-repo",
-        "scope": null,
-        "escapedName": "fronthack-repo",
-        "name": null,
-        "rawSpec": "fronthack-repo",
-        "spec": "/Users/michal/Projects/fronthack/fronthack-repo",
-        "type": "directory"
-      },
-      "/Users/michal/Projects/fronthack"
-    ]
-  ],
-  "_from": "fronthack-repo",
-  "_id": "fronthack-repo@2.5.5",
-  "_inCache": true,
-  "_location": "/fronthack-repo",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "fronthack-repo",
-    "scope": null,
-    "escapedName": "fronthack-repo",
-    "name": null,
-    "rawSpec": "fronthack-repo",
-    "spec": "/Users/michal/Projects/fronthack/fronthack-repo",
-    "type": "directory"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "file:fronthack-repo",
-  "_shasum": "bb395ce61763ea4a197b5afc16a11818d952b4a5",
-  "_shrinkwrap": null,
-  "_spec": "fronthack-repo",
-  "_where": "/Users/michal/Projects/fronthack",
-  "author": {
-    "name": "Michal Kokocinski",
-    "email": "michal@kokocinski.me",
-    "url": "http://kokocinski.me"
-  },
-  "bugs": {
-    "url": "https://github.com/frontcraft/fronthack-repo/issues"
-  },
   "dependencies": {},
-  "description": "Repository with a file structure, which is served by the Fronthack CLI",
+  "description": "Example static project created with Fronthack",
   "devDependencies": {
-    "flexboxgrid-sass": "^8.0.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "fronthack-scripts": "^0.0.10",
     "gh-pages": "^1.0.0",
     "gulp": "~3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^8.0.0",
     "gulp-delete-lines": "0.0.7",
     "gulp-imagemin": "^3.4.0",
     "gulp-jsmin": "^0.1.5",
+    "gulp-mode": "^1.0.2",
     "gulp-mustache": "~2.3.0",
     "gulp-rename": "~1.2.2",
     "gulp-sass": "~3.1.0",
     "gulp-server-livereload": "^1.9.2",
     "gulp-watch": "~4.3.11",
+    "htmlhint": "^0.11.0",
     "imagemin-jpeg-recompress": "^5.1.0",
+    "sass-lint": "^1.13.1",
     "vinyl-fs": "^2.4.4"
   },
   "engines": {
     "node": ">=0.10.0"
   },
-  "gitHead": "76d51f6affe4b6334aa0079851725800ca387543",
   "homepage": "http://fronthack.com",
-  "keywords": [
-    "css",
-    "sass",
-    "html",
-    "bem",
-    "smacss",
-    "ui",
-    "framework",
-    "styleguide",
-    "gulp"
-  ],
   "license": "MIT",
   "main": "gulpfile.js",
-  "name": "fronthack-repo",
-  "optionalDependencies": {},
-  "readme": "### Do not install or clone this package! Use [fronthack](https://www.npmjs.com/package/fronthack) init command instead.\n\nThis is a start-up codebase for the Fronthack tool that improves the way how you write your markup and stylesheets.\n\n```\nnpm install -g fronthack\nfronthack init\ncd fronthack\nfronthack help\n```\n",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/frontcraft/fronthack-repo.git"
-  },
+  "name": "fronthack-example",
   "scripts": {
-    "build": "gulp build",
-    "deploy": "gh-pages -d dist",
-    "dev": "gulp dev"
+    "start": "gulp",
+    "build": "gulp --production",
+    "deploy": "gh-pages -d dist"
   },
   "version": "2.5.5"
 }
