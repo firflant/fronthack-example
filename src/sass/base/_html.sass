@@ -1,13 +1,38 @@
-// Typography
+// Basic HTML
 //
-// Typography and other basic HTML elements related to the editorial content,
-// which can be modified by a provided WYSiWYG editor. Common examples are:
-// - Article
-// - Basic page content (like Terms of Use, Privacy Policy)
+// Typography and other basic HTML elements.
 //
-// Better do not mix these tags with components, or if you have to (for example
-// headings for the SEO purposes), do that with caution.
+// Good practice is to use basic HTML tags only in the WYSiWYG sections like an
+// article content or basic subpage. For everything else, as much as it is
+// possible use the components built from <div> and <span> elements.
 
+body
+  font-weight: $regular
+  font-family: $font-family-base
+  font-size: $font-size-base
+  color: $text-color
+  background-color: $body-bg
+  line-height: $line-height-base
+  margin: 0
+  min-height: 100vh
+  // Better Font Rendering
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+a
+  color: $link-color
+  text-decoration: none
+  &:hover,
+  &:active,
+  &:focus,
+  a:visited
+    color: $link-color-hover
+
+strong
+  font-weight: $bold
+
+img
+  vertical-align: bottom
 
 
 // Headings

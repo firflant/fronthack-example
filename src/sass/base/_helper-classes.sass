@@ -1,4 +1,68 @@
 //
+// Helper classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix
+  +clearfix
+
+.center
+  +center
+
+.pull-right
+  float: right !important
+
+.pull-left
+  float: left !important
+
+
+// Text aligns
+// -------------------------
+
+.text-left
+  text-align: left
+
+.text-right
+  text-align: right
+
+.text-center
+  text-align: center
+
+.text-justify
+  text-align: justify
+
+
+// Other utilities
+// -------------------------
+
+// Hiding stuff
+.hidden
+  display: none
+
+// Full container's width
+.full-width
+  width: 100%
+
+// Set all included items to inline
+.inline
+  +inline
+
+// Will display horizontal scroll bar on table when needed.
+.table-responsive
+  overflow-x: auto
+  margin-bottom: 60px
+  table
+    margin-bottom: 0
+
+// Wrapper for a more button.
+.more
+  text-align: center
+  margin-top: 20px
+
+//
 // Responsive helper classes
 // --------------------------------------------------
 
@@ -47,6 +111,7 @@
 
 @media (max-width: $screen-xs-max)
   +responsive-visibility('.visible-xs')
+
 .visible-xs-block
   @media (max-width: $screen-xs-max)
     display: block !important
@@ -177,5 +242,5 @@
   +container($container-wide-max-width)
 
 // Avoid doubled paddings if container is placed inside another container.
-[class*="container"] [class*="container"]
+[class*='container'] [class*='container']
   padding: 0
