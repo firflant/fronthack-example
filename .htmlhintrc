@@ -1,7 +1,5 @@
 {
-    "doctype-first": false,
-    "tag-pair": true,
-    "space-tab-mixed-disabled": "space2",
-    "tag-self-close": true,
-    "tag-pair": true
+  "attr-value-double-quotes": true,
+  "doctype-first": false,
+  "spec-char-escape": false
 }
